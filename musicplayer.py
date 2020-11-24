@@ -43,14 +43,14 @@ def ExitMusicPlayer():
 def pause():
     pygame.mixer.music.pause()
 
-def unpause():
+def resume():
     pygame.mixer.music.unpause()
 
 #Creating buttons
 Button1 = tkr.Button(musicplayer, width=5, height=3, font="Cambria 20 bold", text="Play Music", command=play, bg="lime green", fg="black")
 Button2 = tkr.Button(musicplayer, width=5, height=3, font="Cambria 20 bold", text="Stop Music", command=ExitMusicPlayer, bg="red", fg="black")
 Button3 = tkr.Button(musicplayer, width=5, height=3, font="Cambria 16 bold", text="Pause Music", command=pause, bg="yellow", fg="black")
-Button4 = tkr.Button(musicplayer, width=5, height=3, font="Cambria 16 bold", text="Unpause Music", command=unpause, bg="skyblue", fg="black")
+Button4 = tkr.Button(musicplayer, width=5, height=3, font="Cambria 16 bold", text="Resume Music", command=resume, bg="skyblue", fg="black")
 
 var = tkr.StringVar()
 songtitle = tkr.Label(musicplayer, font="Helvetica 12 bold", textvariable=var)
